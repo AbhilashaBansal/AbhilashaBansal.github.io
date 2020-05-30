@@ -1,0 +1,135 @@
+body{
+	font-size: 16px;
+	color: #fff;
+	background-color: #61122f;
+	font-family: 'Lato', sans-serif;
+}
+
+#header-nav{
+	background-color: #f6b319;
+	border-radius: 0;
+	border: 0;
+}
+
+#logo-img{
+	background: url('txbg2.jpg') no-repeat;
+	width: 150px;
+	height: 150px;
+	margin: 10px 15px 10px 0;
+}
+
+.navbar-brand{
+	padding: 25px;
+}
+
+.navbar-brand h1{
+	color: #557c3e;
+	font-size: 1.5em;
+	text-shadow: 1px 1px 1px #222;
+	text-transform: uppercase;
+	font-weight: bold;
+	line-height: .75;
+	margin-top: 0;
+	margin-bottom: 15px;
+	line-height: .75;
+}
+
+.navbar-brand a:hover, .navbar-brand a:focus{
+	text-decoration: none;
+}
+
+#collapsable-nav{
+	margin-top: 10px;
+}
+
+#nav-list{
+	margin-top: 10px;
+}
+
+#nav-list li{
+	padding-left: 7px;
+	padding-right: 7px;
+	align-content: center;
+}
+
+#nav-list a{
+	color: #951C49;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+#nav-list a:hover{
+	background-color: #E7E7E7;
+	text-decoration: none;
+}
+
+#phone{
+	margin-top: 5px;
+}
+#phone a{
+	text-align: right;
+	padding-bottom: 0;
+}
+#phone div{
+	color: #557c3e;
+	text-align: right;
+}
+
+#navbar-header button.navbar-toggler {
+	border: 1px solid #61122f;
+}
+
+/* LARGE and EXTRA LARGE devices */
+@media (min-width: 1200px){
+
+}
+
+/* MEDIUM devices only */
+@media (min-width: 992px) and (max-width: 1199px){
+
+}
+
+/* SMALL devices only */
+@media (min-width: 768px) and (max-width: 991px){
+
+}
+
+/* EXTRA SMALL DEVICES */
+@media (max-width: 767px){
+	#navbar-header{
+		width: 100%;
+
+	}
+	#navbar-header button{
+		margin-right: 0px;
+	}
+	#collapsable-nav{
+		width: 100%;
+	}
+	#nav-list{
+		margin: auto;
+		align-content: center;
+		float: unset;
+	}
+	#nav-list li{
+		border: 1px solid brown;
+	}
+	.navbar-brand{
+		padding-top: 10px;
+	}
+	.navbar-brand h1{
+		margin-left: -15px;
+		padding-top: 10px;
+		font-size: 4.5vw;
+	}
+	.navbar-brand p{
+		font-size: .6em;
+		margin-top: 12px;
+	}
+
+}
+
+
+
+
+
