@@ -271,6 +271,7 @@ function StartGame(){
 					ship.x = (Math.random()*1000000)%WIDTH;
 					ship.y = 0;
 					fire.active = false;
+					document.getElementById("score").textContent = "SCORE : " + score;
 				}
 				console.log(distance);
 			}
