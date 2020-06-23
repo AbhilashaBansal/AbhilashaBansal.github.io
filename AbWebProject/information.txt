@@ -1,2 +1,2 @@
 This is the first project I created.
-It is publicshed at: https://abhilashabansal.github.io/AbWebProject/
+It is published at: https://abhilashabansal.github.io/AbWebProject/
