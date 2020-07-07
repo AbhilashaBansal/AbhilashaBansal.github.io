@@ -1,0 +1,131 @@
+body {
+	background-color: lightblue;
+	font-family: 'Roboto Slab', serif;
+}
+
+#heading {
+	margin: 10px;
+}
+
+.head_img {
+	width: 30%;
+	margin: 0.5%;
+}
+
+.copyright-text {
+	font-size: 17px;
+	color: deepskyblue;
+}
+
+input {
+	width: 40%;
+}
+
+label {
+	font-size: 1.4rem;
+	text-align: right;
+	width: 40%;
+	margin-right: 10px;
+}
+
+.button {
+	margin-right: 20px;
+	width: 15%;
+	padding: 5px;
+	font-size: 25px;
+	color: white;
+	background-color: dodgerblue; 
+	border: 1px solid white;
+}
+
+.button:hover {
+	background-color: skyblue;
+}
+.button:focus {
+	background-color: lavender;
+}
+
+.dish-image-div img{
+	border: 2px solid dodgerblue;
+	border-radius: 7px;
+	margin: 15px;
+  	box-shadow: 3px 3px 10px white;
+}
+
+#search-results-heading {
+	font-size: 35px;
+	margin: 20px;
+}
+
+.dish-title-div {
+	font-size: 1.5rem;
+  	margin: auto;
+  	max-width: 88%;
+  	text-shadow: 3px 3px 3px white;
+  	margin-bottom: 10px;
+}
+
+.dish-title-div a:hover {
+	text-decoration: none;
+	color: hotpink;
+}
+
+.dish-ingredients-div {
+	font-size: 20px;
+	margin: 10px;
+	margin-bottom: 20px;
+}
+
+.row {
+	height: 300px;
+}
+
+@media (max-width: 900px){
+	.row {
+		height: 200px; 
+	}
+	.button {
+		font-size: 20px;
+		width: auto;
+	}
+}
+
+@media (max-width: 600px){
+	#heading_text h1{
+		font-size: 30px;
+	}
+	#head1{
+		display: none;
+	}
+	#head2, #head3{
+		width: 42%;
+	}
+
+	label {
+		font-size: 1.2rem;
+		text-align: left;
+		width: 70%;
+	}
+	input{
+		width: 70%;
+	}
+
+	#search-results-heading {
+		font-size: 25px;
+
+	}
+	.dish-title-div {
+		font-size: 1.2rem;
+	  	margin: auto;
+	  	max-width: 88%;
+	  	text-shadow: 3px 3px 3px white;
+	  	margin-bottom: 10px;
+	}
+	.dish-ingredients-div {
+		font-size: 15px;
+		margin: 10px;
+		margin-bottom: 20px;
+	}
+
+}
+

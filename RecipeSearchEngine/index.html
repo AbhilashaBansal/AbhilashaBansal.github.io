@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv=“Pragma” content=”no-cache”>
+	<meta http-equiv=“Expires” content=”-1″>
+	<meta http-equiv=“CACHE-CONTROL” content=”NO-CACHE”>
+	<!-- CSS Stylesheets -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Recipes API Project</title>
+</head>
+<body>
+	<div class="container-fluid" id="heading">
+		<div class="row justify-content-center">
+			<img src="food_head_1.jpg" class="head_img" id="head1" alt="Food image">
+			<img src="food_head_2.png" class="head_img" id="head2" alt="Food image">
+			<img src="pizza.jpg" class="head_img" id="head3" alt="Food image">
+		</div>
+		<br>
+		<br>
+		<div class="" id="heading_text">
+			<h1 align="center">Recipe Search Engine</h1>
+			<p class="copyright-text" align="center">Powered by : <a href="http://www.recipepuppy.com/about/api/" target= "_blank">🐶 Recipe Puppy</a></p>
+		</div>
+	</div>
+	<br>
+	<div class="container-fluid" id="main_content">
+		<div>
+			<form id="query-form">
+				<div align="center">
+				<label for="ingredients">Ingredients (comma separated): </label><input class="textfield" type="text" id="ingredients" name="ingredients" placeholder="Eg: potato, corn... (Optional)" onchange="sanitize_inputs();">
+				</div>
+				<div align="center">
+				<label for="contains">Dish name contains (no commas): </label><input class="textfield" type="text" id="contains" name="contains" placeholder="Eg: pizza (Optional)" onchange="sanitize_inputs();">
+				</div>
+				<br>
+				<div align="center">
+				<input class="button" type="button" value="Reset" id="resetButton" onclick="this.form.reset(); resetResults();">
+				<input class="button" type="submit" value="Search" id="searchButton">
+				</div>
+				<br>
+			</form>
+		</div>
+		<br>
+		<div align="center" class="section-subheading" id="search-results-heading"></div>
+		<div class="results-div" id="results"></div>
+	</div>
+</body>
+
+
+<footer style="margin-bottom: 0;">
+	<div class="section-divider" align="center"><img src="footer-line.png" width="90%"></div>
+	<br />
+  	<div align="center"class="copyright-text">Search powered by <a href="http://www.recipepuppy.com/about/api/" target= "_blank">🐶 Recipe Puppy</a></div>
+
+  	<div align="center"class="copyright-text">Crafted with ❤️</div>
+  	<br>
+</footer>
+
+
+<!--<script src="script.js"></script>-->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="script.js"></script>
+</html>
