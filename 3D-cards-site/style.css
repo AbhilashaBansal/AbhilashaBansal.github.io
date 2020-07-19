@@ -1,0 +1,134 @@
+body {
+    background-image: radial-gradient(rgb(83, 240, 224), rgb(147, 243, 243), rgb(193, 247, 247));
+    font-family: 'Titillium Web', sans-serif;
+    perspective: 800px;
+}
+
+/* Navbar */
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 15px;
+    background-color: darkblue;
+    color: white;
+    margin-bottom: 10px;
+    z-index: 200;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.5em;
+}
+
+#navbar {
+    float: right;
+}
+
+.active {
+    background-color: lightskyblue;
+}
+
+@media (max-width: 510px) {
+    .navbar {
+        font-size: .85em;
+    }
+    .navbar::before, .navbar::after{
+        content: "";
+        display: table;
+        clear: both;
+    }
+    /* #navbar {
+        float: unset;
+    } */
+}
+
+/* Main */
+h3 {
+    font-size: 1.2em;
+}
+
+/* Footer */
+footer{
+    /* position: fixed;
+    bottom: 0;
+    width: auto; */
+    background-color: darkblue;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+footer a{
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 10px;
+}
+
+
+/* for the technology page */
+.main-div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* for the cards */
+.card {
+    height: 300px;
+    width: 350px;
+    margin: 2%;
+}
+
+.side-1, .side-2 {
+    height: 300px;
+    width: 350px;
+    position: absolute;
+    backface-visibility: hidden;
+}
+
+.card {
+    transition: all 2s;
+    transform-style: preserve-3d;
+    /* display: flex;
+    justify-content: center;
+    align-content: center; */
+}
+
+.side-1 {
+    background-color: lightcyan;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.side-2 {
+    background-color: lightskyblue;
+    transform: rotateY(180deg);
+    padding-left: 2px;
+    padding-right: 2px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: rotateY(-180deg);
+}
+
+button {
+    font-size: 1em;
+    background-color: lightcyan;
+}
+
+button a{
+    color: black;
+    text-decoration: none;
+}
