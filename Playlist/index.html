@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <script async defer src="./app.js"></script>
+    <title>Playlist</title>
+</head>
+<body>
+    <h1>Create A Playlist</h1>
+    <h3 id="heading-1">Available Songs: </h3>
+    <table id="available">
+        <thead>
+            <tr>
+                <td width="40%">Song</td>
+                <td width="20%">Singer</td>
+                <td width="20%">Duration</td>
+                <td width="20%">Add to Playlist</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="song-1">
+                <td class="title">Bailando
+                    <audio class="aud" style="display: none;" src="./Enrique Iglesias - Bailando ft. Descemer Bueno, Gente De Zona -.mp3" type="audio/mp3" preload="metadata">
+                    </audio>
+                </td>
+                <td class="artist">Enrique Iglesias</td>
+                <td class="dur">3.97</td>
+                <td><button class="add" id="btn1">Add</button></td>
+            </tr>
+            <tr id="song-2">
+                <td class="title">Style
+                    <audio class="aud" style="display: none;" src="./Taylor Swift - Style.mp3" type="audio/mp3" preload="metadata">
+                    </audio>
+                </td>
+                <td class="artist">Taylor Swift</td>
+                <td class="dur">3.93</td>
+                <td><button class="add" id="btn2">Add</button></td>
+            </tr>
+            <tr id="song-3">
+                <td class="title">Waiting on the World to Change
+                    <audio class="aud" style="display: none;" src="./john-mayer-waiting-on-the-world-to-change.mp3" type="audio/mp3" preload="metadata">
+                    </audio>
+                </td>
+                <td class="artist">John Mayer</td>
+                <td class="dur">3.36</td>
+                <td><button class="add" id="btn3">Add</button></td>
+            </tr>
+            <tr id="song-4">
+                <td class="title">Yellow
+                    <audio class="aud" style="display: none;" src="./Coldplay - Yellow (Official Video).mp3" type="audio/mp3" preload="metadata">
+                    </audio>
+                </td>
+                <td class="artist">Coldplay</td>
+                <td class="dur">4.54</td>
+                <td><button class="add" id="btn4">Add</button></td>
+            </tr>
+            <tr id="song-5">
+                <td class="title">In My Blood
+                    <audio class="aud" style="display: none;" src="./Shawn Mendes - In My Blood.mp3" type="audio/mp3" preload="metadata">
+                    </audio>
+                </td>
+                <td class="artist">Shawn Mendes</td>
+                <td class="dur">3.56</td>
+                <td><button class="add" id="btn5">Add</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h1 id="heading-2">Your Playlist</h1>
+    <div></div>
+    <table id="playlist">
+        <thead>
+            <td width="40%">Song</td>
+            <td width="20%">Artist</td>
+            <td width="20%">Duration</td>
+            <td width="20%">Delete from Playlist</td>
+        </thead>
+        <tbody id="play-body">
+        </tbody>
+    </table>
+
+    <div id="last-div">
+        <button id="play">Play</button>
+        <button id="next">Next</button>
+        <button id="prev">Prev</button>
+        <button id="pause">Pause</button>
+    </div>
+</body>
+</html>

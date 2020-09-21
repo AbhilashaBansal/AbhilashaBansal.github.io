@@ -1,0 +1,53 @@
+body{
+    margin: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+table {
+    margin-top: 20px;
+    border-spacing: 0px 10px;
+    width: 100%;
+}
+
+#available thead {
+    background-color: rgb(189, 139, 189);
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#available tbody{
+    /* background-color: rgb(245, 216, 226); */
+    background-color: rgb(243, 236, 243);
+}
+
+td {
+    padding: 8px;
+}
+
+button {
+    font-size: 20px;
+    background-color: rgba(5, 137, 214, 0.993);
+    min-width: 100px;
+    color: white;
+}
+
+#playlist thead {
+    background-color: mediumaquamarine;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#playlist tbody{
+    background-color: rgb(215, 247, 237)
+}
+
+#last-div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#last-div button {
+    margin-top: 10px;
+}
