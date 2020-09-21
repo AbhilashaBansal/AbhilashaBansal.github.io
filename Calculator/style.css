@@ -1,0 +1,111 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    background: radial-gradient(deepskyblue, skyblue, white);
+}
+  
+#heading{
+    margin: 10px 0;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+    text-shadow: 1px 1px 2px deepskyblue;
+    background-color: skyblue;
+    border-radius: 2px;
+}
+
+#container {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Calculator box */
+#calculator {
+    text-align: center;
+    padding: 8px;
+    border: 1px solid rgb(7, 95, 196);
+    background-color: rgb(27, 99, 170);
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 2px 2px 2px black;
+}
+
+#display {
+    margin-bottom: 10px;
+    border-radius: 2px;
+    min-height: 50px;
+    border: 1px solid black;
+}
+
+#output {
+    padding: 10px;
+    font-weight: bold;
+    font-size: 25px;
+    color: white;
+    text-align: right;
+}
+
+.row {
+    margin: 7px 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.col {
+    width: 23%;
+    background: white;
+    padding: 12px 4px;
+    font-size: 16px;
+    border-radius: 2px;
+}
+
+.number {
+    font-weight: bold;
+}
+
+#calculate {
+    background-color: skyblue;
+}
+
+
+/* Animation */
+.wrapper{
+    height: 120px;
+    margin-top: 20px;
+}
+
+.animation{
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    text-align: center;
+}
+  
+.animate {
+    animation-duration: 1s;
+    animation-name: emphasis;
+}
+  
+@keyframes emphasis {
+    0% {
+        position: relative;
+        top: 50%;
+        font-size: 0px;
+        opacity: 1.0;
+    }
+    
+    100% {
+        position: relative;
+        top: 10%;
+        font-size: 90px;
+        opacity: 0.0;
+    }
+}
+  
+  
