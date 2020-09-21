@@ -1,0 +1,69 @@
+body {
+    background-image: radial-gradient(skyblue, powderblue, white);
+    position: relative;
+}
+
+label {
+    min-width: 70px;
+}
+
+#carous {
+    margin-top: 7%;
+    padding: 2%;
+    background-image: radial-gradient(skyblue, powderblue, white);
+    margin-bottom: 4%;
+}
+
+.carousel-item {
+    max-height: 550px;
+}
+
+/* Heading */
+h2 {
+    margin-top: 7%;
+    margin-bottom: 4%;
+    text-shadow: -1px -1px 3px rgb(59, 140, 226);
+}
+
+.artist-card {
+    height: 100%;
+}
+
+.album-card {
+    height: 400px;
+    margin: 4%;
+}
+
+/* For medium, large and extra large screens */
+@media (min-width: 767px) {
+    .card-img-top {
+        height: 40%;
+    }
+}
+
+/* For extra-small and small screens */
+@media (max-width: 766px){
+    #carous{
+        margin-top: 10%;
+    }
+    .artist-card{
+        width: 80%;
+    }
+    .album-card img {
+        height: 40%;
+    }
+    #copyright {
+        clear: both;
+    }
+}
+
+@media (max-width: 575px){
+    .album-card {
+        width: 80%;
+    }
+    .album-card img{
+        height: 50%;
+    }
+}
+
+
