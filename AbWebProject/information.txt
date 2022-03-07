@@ -1,2 +1,0 @@
-This is the first project I created.
-It is published at: https://abhilashabansal.github.io/AbWebProject/
